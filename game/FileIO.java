@@ -14,7 +14,7 @@ public class FileIO
 		BufferedImage temp = null;
 		try
 		{
-			temp = ImageIO.read(FileIO.class.getResourceAsStream("images\\" + location));
+			temp = ImageIO.read(FileIO.class.getResourceAsStream("images/" + location));
 		} catch (IOException e) { System.err.println(e.toString()); }
 		return temp;
 	}
